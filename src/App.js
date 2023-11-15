@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ProductsList from "./components/ProductsList";
+import DeleteConfirmationModal from "./components/DeleteConfirmationModal";
+import AddProduct from "./components/AddProduct";
+import { Container } from "@mui/material";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container fixed sx={{ bgcolor: '#F2F2F2', width:' 500px' }}>
+        <AddProduct />
+        <ProductsList />
+        <DeleteConfirmationModal />
+      </Container>
   );
 }
 
