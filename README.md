@@ -1,4 +1,5 @@
-Using React, Redux and MUI.
+
+Using React, Redux, MUI and json server.
 
 ### `npm start`
 Runs the app in the development mode.\
